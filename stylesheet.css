@@ -6,12 +6,35 @@
 * {
     font-family: 'Poppins';
     font-size: 0.75rem;
+    box-sizing: border-box;
+    
 }
 
 .container {
     display: grid;
     grid-template: auto 3fr / 1fr 4fr;
     height: 97vh;
+}
+
+.dashboard-icon {
+    height: 1rem;
+    justify-self: end;
+    padding-right: 5px;
+}
+
+.dashboard-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    
+}
+
+.memoji {
+    height: 2.5rem;
+    background-color: #bec4c5;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 1px grey;
+    margin: 5px;
 }
 
 ul {
@@ -23,26 +46,47 @@ ul {
     padding: 0;
 }
 
+.nav > * {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    margin: 5px;
+    align-items: center;
+
+}
+
+.fa-house,
+.fa-address-card, 
+.fa-envelope {
+    justify-self: end;
+
+}
+
 .sidebar {
     grid-row-start: 1;
     grid-row-end: 3;
     display: grid;
     grid-template-rows: 0.5fr 4fr;
+    background-color: #8ccfbc;
+    padding: 5px;
 }
 
 .header {
     display: grid;
-    grid-template: 1fr 2fr / 2fr 2fr;
-
+    grid-template: min-content 2fr / 2fr 2fr;
 
 }
 
 .header > .top-right {
-    color: red;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: end;
+}
+
+.top-right > .name {
+    justify-self: start;
+    margin-left: 5px;
 }
 
 .intro {
@@ -51,7 +95,7 @@ ul {
     align-items: end;
 }
 
-.intro > .pic {
+.intro > .memoji {
     grid-row: 1 / 3;
     align-self: center;
     justify-self: center;
@@ -68,8 +112,14 @@ ul.socials {
     justify-items: center;
 }
 
+.fa-brands,
+.fa-moon {
+    font-size: 1.5rem;
+}
+
 .content {
     display: grid;
+    background-color: #bec4c5;
     grid-template-columns: 3fr 1fr;
 }
 
@@ -77,10 +127,55 @@ ul.socials {
     grid-row: 1 / 3;
     display: grid;
     grid-template-rows: auto 6fr;
+    padding: 10px;
     
 }
 
 .project-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.projects {
+    border-left: 3px solid #E5BC53;
+    border-radius: 5%;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+
+}
+
+.project-description {
+    font-size: 0.7rem;
+}
+
+.project-description.small {
+    font-size: 0.55rem;
+}
+
+
+.project-title {
+    align-self: end;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.hi {
+    font-size: 0.65rem;
+}
+
+.content {
+    border-top: 0.75px solid rgb(133, 132, 132);
+
 }

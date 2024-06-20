@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="stylesheet.css">
     <title>Dashboard</title>
 </head>
@@ -10,11 +13,35 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="dashboard">Dashboard</div>
+            <div class="dashboard">
+
+                <div class="dashboard-top">
+                    <img class="dashboard-icon" src="./layout.png">
+                    <h2>Dashboard</h2>
+                </div>
+                
+                
+            </div>
             <ul class="nav">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Leave a message</li>
+                <div class="home">
+                    <i class="fa-solid fa-house"></i>
+                    <li>Home</li>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-address-card"></i>
+                    <li>Profile</li>
+
+                </div>
+
+                <div class="message">
+                    <i class="fa-solid fa-envelope"></i>
+                    <li>Leave a message</li>
+
+
+                </div>
+
+                
 
             </ul>
         </div>
@@ -23,24 +50,24 @@
             <div>search</div>
 
             <div class="top-right">
-                <div>bell</div>
-                <div>pic</div>
-                <div>Alysha Thean</div>
+                <i class="fa-solid fa-moon"></i>
+                <img src="./memoji.png" class="memoji">
+                <div class="name">Alysha Thean</div>
 
             </div>
 
             <div class="intro">
-                <div class="pic">pic</div>
-                <div>Hi! I'm</div>
+                <img src="./memoji.png" class="memoji">
+                <div class="hi">Hi! I'm</div>
                 <div class="name">Alysha Thean</div>
 
 
             </div>
 
             <ul class="socials">
-                <li class="instagram">ig</li>
-                <li class="facebook">fb</li>
-                <li class="github">gh</li>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
 
             </ul>
 
@@ -48,15 +75,60 @@
 
         <div class="content">
             <div class="my-projects">
-                <div class="title">
+
+                <h2 class="title">
                     My projects
-                </div>
+                </h2>
 
                 <div class="project-content">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                    <div class="projects">
+
+                        <h3 class="project-title">Forms</h3>
+                        
+                        <p class="project-description">
+                            A simple form layout to take personal
+                            details and messages (backend yet to implement)
+                            
+                        </p>
+
+                    </div>
+
+                    <div class="projects">
+
+                        <h3 class="project-title">Calculator</h3>
+                        
+                        <p class="project-description">
+                            NuPhy inspired calculator that supports multiple equal presses 
+                            <div class="project-description small">takes keyboard input too!</div>
+                            
+                        </p>
+
+                    </div>
+
+                    <div class="projects">
+
+                        <h3 class="project-title">Etch-a-Sketch</h3>
+                        
+                        <p class="project-description">
+                            A childhood favourite digitalised
+                            
+                        </p>
+
+                    </div>
+
+                    <div class="projects">
+
+                        <h3 class="project-title">Rock Paper Scissors</h3>
+                        
+                        <p class="project-description">
+                            Why play against your friends when you can play against a computer
+                            
+                        </p>
+
+                    </div>
+
+
+
 
 
 
