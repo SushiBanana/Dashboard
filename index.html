@@ -15,7 +15,7 @@
             <div class="dashboard">
 
                 <div class="dashboard-top">
-                    <img class="dashboard-icon" src="./layout.png">
+                    <img class="dashboard-icon" src="./images/layout.png">
                     <h2>Dashboard</h2>
                 </div>
                 
@@ -23,8 +23,8 @@
 
             <ul class="nav">
                 <div class="home">
-                    <i class="fa-solid fa-house"></i>
-                    <li class="dash-title">Home</li>
+                    <i class="fa-solid fa-house house"></i>
+                    <li class="dash-title house">Home</li>
                 </div>
 
                 <div class="profile">
@@ -45,7 +45,7 @@
         <div class="header">
 
             <div class="intro">
-                <img src="./memoji.png" class="memoji">
+                <img src="./images/memoji.png" class="memoji">
                 <div class="hi">Hi! I'm</div>
                 <div class="name">Alysha Thean</div>
 
@@ -149,7 +149,7 @@
                         <i class="date">Feb 2024 - Present</i>
                         <div class="location">
                             <i class="fa-solid fa-location-dot"></i>
-                            <img class="flag" src="./australia-flag-icon-256.png">
+                            <img class="flag" src="./images/australia-flag-icon-256.png">
                             <div class="location">Australia</div>
                         </div>
                         <div class="degree">Bachelor of Science</div>
@@ -162,7 +162,7 @@
                         <i class="date">Jul 2023 - Dec 2023</i>
                         <div class="location">
                             <i class="fa-solid fa-location-dot"></i>
-                            <img class="flag" src="./malaysia-flag-icon-256.png">
+                            <img class="flag" src="./images/malaysia-flag-icon-256.png">
                             <div class="location">Malaysia</div>
                         </div>
                         <div class="degree">Bachelor of Computer Science</div>
@@ -194,9 +194,16 @@
 
             </div>
         </div>
-
-        </div>
     </div>
+
+    <script>
+        var items = document.getElementsByClassName("home");
+
+        for (let i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function() {location.reload();
+        });
+        }
+    </script>
     
 </body>
 
