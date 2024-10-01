@@ -220,13 +220,24 @@ ul.socials {
 
 }
 
-.project-buttons {
+.project-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.project-icons .links{
     justify-self: end;
 }
 
 .fa-code,
 .fa-link {
     margin: 5px;
+}
+
+.fa-brands {
+    color: #1e3150;
 }
 
 .fa-code:hover,
